@@ -1,0 +1,40 @@
+page-contact {
+    font-family: 'Tangerine', cursive;
+    ion-content{
+        background-image: url('../../assets/imgs/ion1.jpg');
+        background-size: cover;
+        
+    }
+    ion-card{
+
+        background-color: turquoise;
+    }
+    .home {
+        background-image: url("../../assets/imgs/art-art-materials-background-1762851.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    #list {
+     background: rgba(0,0,0,0.1);
+ }
+ 
+ #item {
+     background: transparent;
+     color: #fff;
+ }
+  h3 {
+      color: #fff;
+  }
+ 
+ 
+  .header_logo{
+      max-height: 56px;
+      margin-left: 235%;
+ 
+  }
+  .hed{
+      background-color: aqua;
+  }
+}

@@ -1,14 +1,43 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-header class="hed">
+  <ion-navbar color="custom">
+    <ion-title style="text-align: center">
+      <img src="../../assets/imgs/s.png" height="30px" >  CodeTribe  <img src="../../assets/imgs/s.png" height="30px" > 
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding  class="home">
+    <ion-icon> <span><img alt="logo" class="header_logo" src="../../assets/imgs/bu.png" ></span> </ion-icon>
+
+    <ion-list id="list" padding>
+       <ion-item id="item">
+         <ion-label floating  style="color:whitesmoke; font-weight: bold">NAME</ion-label>
+         <ion-input type="text" value="" [(ngModel)]="user.name">
+       </ion-input>
+       </ion-item>
+       <ion-item id="item" >
+           <ion-label floating  style="color:whitesmoke; font-weight: bold">EMAIL:</ion-label>
+           <ion-input type="text" value="" [(ngModel)]="user.email">
+         </ion-input>
+         </ion-item>
+
+       <ion-item id="item" >
+         <ion-label floating  style="color:whitesmoke; font-weight: bold">AGE:</ion-label>
+         <ion-input type="text" [(ngModel)]="user.age">
+       </ion-input>
+       </ion-item>
+
+       <ion-item id="item" >
+         <ion-label floating style="color:whitesmoke; font-weight: bold">BIO:</ion-label>
+         <ion-input type="text" [(ngModel)]="user.bio">
+       </ion-input>
+     </ion-item>
+
+     <div class="btn-continue" padding style="text-align: center">
+         <button center  ion-button color="custom" (click)="openContact()"> MOVE TO NEXT PAGE</button>
+      </div>
+
+
+   </ion-list>
 </ion-content>
